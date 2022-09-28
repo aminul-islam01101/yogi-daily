@@ -9,7 +9,6 @@ const App = () => {
         // eslint-disable-next-line radix
         setExerciseTime((prev) => prev + parseInt(duration));
     };
-    console.log(exerciseTime);
 
     return (
         <div>
