@@ -5,7 +5,8 @@ import WorkoutCards from './components/WorkoutCards';
 const App = () => {
     const [exerciseTime, setExerciseTime] = useState(0);
 
-    const handleClick = (duration) => {
+    const handleClick = (duration, setButtonStatus) => {
+        setButtonStatus(true);
         // eslint-disable-next-line radix
         setExerciseTime((prev) => prev + parseInt(duration));
     };

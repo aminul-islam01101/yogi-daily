@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import ExerciseTime from './ExerciseTime';
 import TimeButton from './TimeButton';
+import UserInfo from './UserInfo';
 
 const ExerciseInfo = ({ exerciseTime }) => {
     const [breakTime, setBreakTime] = useState(0);
@@ -21,7 +22,8 @@ const ExerciseInfo = ({ exerciseTime }) => {
 
     return (
         <div>
-            <div>
+            <UserInfo />
+            <div className="flex justify-between">
                 {breakTimes.map((time) => (
                     <TimeButton
                         time={time}

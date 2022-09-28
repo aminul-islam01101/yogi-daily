@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const WorkoutCard = ({ workout, handleClick }) => {
+    const [buttonStatus, setButtonStatus] = useState(false);
+
     const { workoutImage, workoutTitle, duration } = workout;
+    // const btnClass = ' button w-full ';
 
     return (
         <div>
@@ -16,12 +19,12 @@ const WorkoutCard = ({ workout, handleClick }) => {
                     <div className="card-actions justify-end">
                         <button
                             type="button"
-                            className="button w-full"
+                            className={buttonStatus ? 'button active' : 'button'}
                             onClick={() => {
-                                handleClick(duration);
+                                handleClick(duration, setButtonStatus);
                             }}
                         >
-                            Add to list
+                            {buttonStatus ? 'workout Added' : 'Add to list'}
                         </button>
                     </div>
                 </div>
