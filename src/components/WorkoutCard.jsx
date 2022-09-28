@@ -1,17 +1,18 @@
 import React from 'react';
 
-function WorkoutCard() {
-    console.log('clicked');
+function WorkoutCard({ workout: { workoutImage, workoutTitle, duration } }) {
+    console.log();
 
     return (
         <div>
-            <div className="card h-full w-full bg-base-100 shadow-xl">
+            <div className="card h-full w-full bg-white shadow-xl">
                 <figure>
-                    <img src="https://placeimg.com/400/225/arch" alt="Shoes" />
+                    <img src={workoutImage} alt="Shoes" />
                 </figure>
                 <div className="card-body">
-                    <h2 className="card-title">Shoes!</h2>
+                    <h2 className="card-title">{workoutTitle}</h2>
                     <p>If a dog chews shoes whose shoes does he choose?</p>
+                    <p>duration: {duration} seconds</p>
                     <div className="card-actions justify-end">
                         <button type="button" className="btn btn-primary">
                             Buy Now

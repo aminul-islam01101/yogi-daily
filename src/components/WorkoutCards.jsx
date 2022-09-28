@@ -13,7 +13,7 @@ function WorkoutCards() {
         loadData();
     }, []);
     return (
-        <div>
+        <div className='className="mt-20 grid grid-cols-2 gap-5 lg:grid-cols-3'>
             {workouts.map((workout) => (
                 <WorkoutCard workout={workout} key={workout.workoutId} />
             ))}
