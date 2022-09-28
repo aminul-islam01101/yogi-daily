@@ -1,7 +1,7 @@
 import React from 'react';
 
-function WorkoutCard({ workout: { workoutImage, workoutTitle, duration } }) {
-    console.log();
+const WorkoutCard = ({ workout, handleClick }) => {
+    const { workoutImage, workoutTitle, duration } = workout;
 
     return (
         <div>
@@ -14,14 +14,20 @@ function WorkoutCard({ workout: { workoutImage, workoutTitle, duration } }) {
                     <p>If a dog chews shoes whose shoes does he choose?</p>
                     <p>duration: {duration} seconds</p>
                     <div className="card-actions justify-end">
-                        <button type="button" className="btn btn-primary">
-                            Buy Now
+                        <button
+                            type="button"
+                            className="button w-full"
+                            onClick={() => {
+                                handleClick(duration);
+                            }}
+                        >
+                            Add to list
                         </button>
                     </div>
                 </div>
             </div>
         </div>
     );
-}
+};
 
 export default WorkoutCard;

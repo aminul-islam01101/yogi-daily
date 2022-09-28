@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import WorkoutCard from './WorkoutCard';
 
-function WorkoutCards() {
+const WorkoutCards = ({ handleClick }) => {
     const [workouts, setWorkouts] = useState([]);
 
     useEffect(() => {
@@ -15,10 +15,10 @@ function WorkoutCards() {
     return (
         <div className='className="mt-20 grid grid-cols-2 gap-5 lg:grid-cols-3'>
             {workouts.map((workout) => (
-                <WorkoutCard workout={workout} key={workout.workoutId} />
+                <WorkoutCard workout={workout} key={workout.workoutId} handleClick={handleClick} />
             ))}
         </div>
     );
-}
+};
 
 export default WorkoutCards;
