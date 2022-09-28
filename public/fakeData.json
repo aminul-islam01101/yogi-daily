@@ -1,0 +1,83 @@
+[
+    {
+        "workoutId":1,
+        "workoutTitle": "squats",
+        "description" : "Squats are a total staple in butt and leg workouts. It just so happens that they can help sculpt the lower-body of your wildest dreams.",
+        "workoutImage": "https://www.freepik.com/free-photo/full-shot-woman-doing-squats_11307867.htm#query=squats%20exercise&position=0&from_view=search",
+        "age" : "15-45",
+        "duration": "40"
+        
+    },
+    {
+        "workoutId":2,
+        "workoutTitle": "planks",
+        "description" : "Plank exercises generally strengthen your ability to brace your abdominals,” notes Lawton. “Planks can also activate other related muscles, such as your glutes (muscles in your buttocks), hamstrings (muscles in the backs of your thighs) and lower back.",
+        "workoutImage": "https://www.freepik.com/free-photo/full-shot-man-doing-plank_16379536.htm#query=planks%20exercise&position=5&from_view=search",
+        "age" : "20-45",
+        "duration": "60"
+        
+    },
+    {
+        "workoutId":3,
+        "workoutTitle": "pushups",
+        "description" : "Pushups are a type of strength building exercise. Though they mainly activate muscles in the arms and shoulders, they also engage muscles in the core and legs.",
+        "workoutImage": "https://www.freepik.com/free-photo/full-shot-man-doing-push-ups-gym_16692003.htm#query=push-ups%20exercise&position=8&from_view=search",
+        "age" : "20-40",
+        "duration": "30"
+        
+    },
+    {
+        "workoutId":4,
+        "workoutTitle": "Jumping Jack",
+        "description" : "Since jumping jacks only require your body weight, they're also a great cardiovascular exercise that you can do anywhere and anytime. In addition to increasing your heart rate and improving muscular strength and endurance, jumping jacks are also a fantastic way to burn calories.",
+        "workoutImage": "https://www.freepik.com/free-photo/tattooed-muscular-athlete-doing-jumping-jacks-isolated-white-brick-wall-black-pull-bar-looking-left-side_11829409.htm#query=jumping%20jack%20exercise&position=1&from_view=search",
+        "age" : "15-50",
+        "duration": "45"
+        
+    },
+    {
+        "workoutId":5,
+        "workoutTitle": "Crunch",
+        "description" : "crunches help you build muscle. But unlike situps, they work only the abdominal muscles. This intense muscle isolation makes them a popular exercise for people trying to get six-pack abs. This also makes them ideal for strengthening your core, which includes your lower back muscles and obliques.",
+        "workoutImage": "https://www.freepik.com/free-photo/dedicated-sportswoman-using-dumbbells-while-exercising-situps-during-home-workout_26876112.htm#query=crunches%20exercise&position=21&from_view=search",
+        "age" : "20-45",
+        "duration": "30"
+        
+    },
+    {
+        "workoutId":6,
+        "workoutTitle": "Side planks",
+        "description" : "While ab exercises like crunches and regular planks target the muscles in the front of your core, a side plank works your obliques, the muscles that run along the side of your core. Keeping your obliques strong can make it easier to rotate and bend your trunk.",
+        "workoutImage": "https://www.freepik.com/free-photo/view-happy-athlete-exercising-side-plank-pose-her-living-room_26876074.htm#query=side%20plank%20exercise&position=9&from_view=search",
+        "age" : "20-35",
+        "duration": "40"
+        
+    },
+    {
+        "workoutId":7,
+        "workoutTitle": "Bicycle crunch",
+        "description" : "Squats are a total staple in butt and leg workouts. It just so happens that they can help sculpt the lower-body of your wildest dreams.",
+        "workoutImage": "https://www.freepik.com/free-photo/full-shot-woman-doing-squats_11307867.htm#query=squats%20exercise&position=0&from_view=search",
+        "age" : "15-45",
+        "duration": "40"
+        
+    },
+    {
+        "workoutId":8,
+        "workoutTitle": "Lunges",
+        "description" : "Lunges increase muscle mass to build up strength and tone your body, especially your core, butt, and legs. Improving your appearance isn't the main benefit of shaping up your body, as you'll also improve your posture and range of motion.",
+        "workoutImage": "https://www.freepik.com/free-photo/attractive-body-positive-woman-is-doing-aerobic-exercise-modern-loft-she-is-wearing-sport-leggings-bra-sneakers-woman-has-blond-curly-hair_30222150.htm#query=lunge%20exercise&position=9&from_view=search",
+        "age" : "18-45",
+        "duration": "40"
+        
+    },
+    {
+        "workoutId":9,
+        "workoutTitle": "Yoga",
+        "description" : "yoga can support the healing process and help the person experience symptoms with more centeredness and less distress.",
+        "workoutImage": "https://www.freepik.com/free-photo/woman-doing-yoga-exercises-beach_859036.htm#query=yoga&position=20&from_view=search",
+        "age" : "15-70",
+        "duration": "240"
+        
+    }
+]
