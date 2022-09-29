@@ -29,7 +29,7 @@ const Home = () => {
         setExerciseTime(0);
         localStorage.setItem('break-time', 0);
         exerciseTime
-            ? Swal.fire('Good job!', 'You clicked the button!', 'success')
+            ? Swal.fire('Good job!', 'You Finished todays session!', 'success')
             : Swal.fire({
                   icon: 'error',
                   title: 'Oops...',

@@ -9,16 +9,20 @@ const ExerciseInfo = ({ exerciseTime, breakTimeHandler, breakTime, handleExercis
     return (
         <div className="space-y-10 sm:sticky sm:top-0 p-3">
             <UserInfo />
-            <div className="flex justify-between">
-                {breakTimes.map((time) => (
-                    <TimeButton
-                        time={time}
-                        key={Math.random()}
-                        breakTimeHandler={breakTimeHandler}
-                    />
-                ))}
+            <div className="flex flex-col gap-3">
+                <h3 className="font-bold">Add a break</h3>
+                <div className="flex justify-between">
+                    {breakTimes.map((time) => (
+                        <TimeButton
+                            time={time}
+                            key={Math.random()}
+                            breakTimeHandler={breakTimeHandler}
+                        />
+                    ))}
+                </div>
             </div>
             <div className="flex flex-col gap-3">
+                <h3 className="font-bold">Exercise Details</h3>
                 <DisplayTime timeType="exercise" time={exerciseTime} />
                 <DisplayTime timeType="break" time={breakTime} />
             </div>

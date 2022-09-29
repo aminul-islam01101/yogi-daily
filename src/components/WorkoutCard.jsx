@@ -7,7 +7,7 @@ const WorkoutCard = ({ workout, handleClick }) => {
     // const btnClass = ' button w-full ';
 
     return (
-        <div>
+        <div data-aos="zoom-in">
             <div className="card h-full w-full bg-white shadow-xl">
                 <figure>
                     <img src={workoutImage} alt="Shoes" />
