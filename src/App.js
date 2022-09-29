@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Accordion from './components/Accordion';
 import ExerciseInfo from './components/ExerciseInfo';
 import WorkoutCards from './components/WorkoutCards';
 
@@ -23,6 +24,11 @@ const App = () => {
                 <div className="min-h-screen bg-orange-100 ">
                     <ExerciseInfo exerciseTime={exerciseTime} />
                 </div>
+            </div>
+            <div>
+                <Accordion />
+                <Accordion />
+                <Accordion />
             </div>
         </div>
     );
