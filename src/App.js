@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import Home from './components/Home';
 
 const App = () => {
+    // card animator
     useEffect(() => {
         AOS.init();
         AOS.refresh();

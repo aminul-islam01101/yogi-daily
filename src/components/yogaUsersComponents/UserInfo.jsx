@@ -1,10 +1,11 @@
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
-import UserImage from '../assets/images/userImage.jpg';
+import UserImage from '../../assets/images/userImage.jpg';
 import UserData from './UserData';
 
 const UserInfo = () => {
+    // users personal data
     const userData = [
         {
             parameter: 'weight',
@@ -25,6 +26,7 @@ const UserInfo = () => {
 
     return (
         <div className="  space-y-10">
+            {/* users info ui */}
             <div className="flex items-center gap-5 ">
                 <div className="avatar online ">
                     <div className="w-full rounded-full ">
@@ -41,6 +43,7 @@ const UserInfo = () => {
                     </small>
                 </div>
             </div>
+            {/* users exercise info ui */}
             <div className=" p-3 bg-amber-200 ">
                 <div className="flex p-2 gap-2 rounded justify-center">
                     {userData.map((data) => (
