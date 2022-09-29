@@ -13,7 +13,7 @@ const WorkoutCards = ({ handleClick }) => {
         loadData();
     }, []);
     return (
-        <div className='className="mt-20 grid grid-cols-2 gap-5 lg:grid-cols-3'>
+        <div className="className=mt-20 grid  gap-8 lg:gap-5 lg:grid-cols-2 xl:grid-cols-3">
             {workouts.map((workout) => (
                 <WorkoutCard workout={workout} key={workout.workoutId} handleClick={handleClick} />
             ))}

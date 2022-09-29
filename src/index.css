@@ -3,17 +3,15 @@
 @tailwind utilities;
 @layer components {
   .container {
-    @apply m-[0_auto] w-95 max-w-7xl px-0 sm:w-90 md:w-80 lg:w-70;
+    @apply m-[0_auto] w-95 max-w-7xl px-0 sm:w-90 md:w-80 2xl:w-70;
   }
-  .container-fluid {
-    @apply w-full px-0;
-  }
+  
   .button {
-    @apply inline-block whitespace-nowrap rounded-md border-0 bg-lime-600 px-4 py-2 font-semibold uppercase text-white outline-none w-full;
+    @apply inline-block whitespace-nowrap rounded-md border-0 bg-green-600  shadow-lg hover:bg-green-700 px-4 py-2 font-semibold uppercase text-white outline-none w-full;
     font-size: .8rem;
   }
   .active{
-    @apply bg-green-500;
+    @apply bg-green-900;
   }
 }
 body {
