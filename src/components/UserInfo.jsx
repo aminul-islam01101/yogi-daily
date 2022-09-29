@@ -24,8 +24,8 @@ const UserInfo = () => {
     ];
 
     return (
-        <div className=" p-3 space-y-10">
-            <div className="flex items-center gap-10 ">
+        <div className="  space-y-10">
+            <div className="flex items-center gap-5 ">
                 <div className="avatar online ">
                     <div className="w-full rounded-full ">
                         <img src={UserImage} alt="img" className="" />
@@ -42,7 +42,7 @@ const UserInfo = () => {
                 </div>
             </div>
             <div className=" p-3 bg-amber-200 ">
-                <div className="flex  p-3 space-x-7 rounded justify-center">
+                <div className="flex p-2 gap-2 rounded justify-center">
                     {userData.map((data) => (
                         <UserData data={data} key={Math.random()} />
                     ))}

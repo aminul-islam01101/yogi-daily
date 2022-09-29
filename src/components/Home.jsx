@@ -74,7 +74,7 @@ const Home = () => {
                 <h2 className="text-center text-3xl mb-10">Frequently asked blog</h2>
                 <div className="w-9/12 mx-auto">
                     {blogData.map((data) => (
-                        <Accordion data={data} />
+                        <Accordion key={Math.random()} data={data} />
                     ))}
                 </div>
             </div>
