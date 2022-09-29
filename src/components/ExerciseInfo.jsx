@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import ExerciseTime from './ExerciseTime';
+import Swal from 'sweetalert2';
+import DisplayTime from './DisplayTime';
 import TimeButton from './TimeButton';
 import UserInfo from './UserInfo';
 
@@ -21,7 +22,7 @@ const ExerciseInfo = ({ exerciseTime }) => {
     };
 
     return (
-        <div>
+        <div className="space-y-10">
             <UserInfo />
             <div className="flex justify-between">
                 {breakTimes.map((time) => (
@@ -32,8 +33,15 @@ const ExerciseInfo = ({ exerciseTime }) => {
                     />
                 ))}
             </div>
-            <p>{breakTime}</p>
-            <ExerciseTime exerciseTime={exerciseTime} />
+            <DisplayTime timeType="exercise" time={exerciseTime} />
+            <DisplayTime timeType="break" time={breakTime} />
+            <button
+                type="button"
+                className="button"
+                onClick={() => Swal.fire('Good job!', 'You clicked the button!', 'success')}
+            >
+                Exercise Completed
+            </button>
         </div>
     );
 };
