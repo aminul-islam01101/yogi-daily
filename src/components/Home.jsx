@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-expressions */
 import React, { useEffect, useState } from 'react';
 import Swal from 'sweetalert2';
+import blogData from '../assets/images/blogData';
 import Logo from '../assets/images/logo.png';
 import Accordion from './Accordion';
 import ExerciseInfo from './ExerciseInfo';
@@ -59,7 +60,7 @@ const Home = () => {
                         <WorkoutCards handleClick={handleClick} />
                     </div>
                 </div>
-                <div className="min-h-screen bg-orange-100 ">
+                <div className="min-h-screen bg-lime-100 p-3 ">
                     <ExerciseInfo
                         exerciseTime={exerciseTime}
                         breakTimeHandler={breakTimeHandler}
@@ -68,10 +69,14 @@ const Home = () => {
                     />
                 </div>
             </div>
-            <div className="mt-28">
-                <Accordion />
-                <Accordion />
-                <Accordion />
+
+            <div className="mt-28 container">
+                <h2 className="text-center text-3xl mb-10">Frequently asked blog</h2>
+                <div className="w-9/12 mx-auto">
+                    {blogData.map((data) => (
+                        <Accordion data={data} />
+                    ))}
+                </div>
             </div>
         </div>
     );

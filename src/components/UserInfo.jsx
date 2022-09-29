@@ -8,7 +8,7 @@ const UserInfo = () => {
     const userData = [
         {
             parameter: 'weight',
-            value: 75,
+            value: 65,
             unit: 'kg',
         },
         {
@@ -24,8 +24,8 @@ const UserInfo = () => {
     ];
 
     return (
-        <div className="p-5 space-y-10">
-            <div className="flex items-center gap-5 justify-between">
+        <div className=" p-3 space-y-10">
+            <div className="flex items-center gap-10 ">
                 <div className="avatar online ">
                     <div className="w-full rounded-full ">
                         <img src={UserImage} alt="img" className="" />
@@ -34,17 +34,20 @@ const UserInfo = () => {
                 <div>
                     <h3>Mr. Camp David</h3>
                     <small>
-                        <span>
+                        <span className="mr-2">
                             <FontAwesomeIcon icon={faLocationDot} />
                         </span>
-                        Sydney, Australia
+                        Bali, Indonesia
                     </small>
                 </div>
             </div>
-            <div className="flex bg-gray-200 p-3 space-x-4 rounded">
-                {userData.map((data) => (
-                    <UserData data={data} key={Math.random()} />
-                ))}
+            <div className=" p-3 bg-amber-200 ">
+                <div className="flex  p-3 space-x-7 rounded justify-center">
+                    {userData.map((data) => (
+                        <UserData data={data} key={Math.random()} />
+                    ))}
+                </div>
+                <p className="border shadow-lg p-2 text-center">Bmi : 20.5 </p>
             </div>
         </div>
     );
