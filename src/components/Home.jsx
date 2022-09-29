@@ -61,6 +61,10 @@ const Home = () => {
                         </h1>
                     </header>
                     {/* card components */}
+                    <h3 className="text-base mb-5">
+                        Are you set for todays session ?
+                        <span className="text-green-600 font-bold ">Lets start !</span>
+                    </h3>
                     <div>
                         <WorkoutCards handleClick={handleClick} />
                     </div>
