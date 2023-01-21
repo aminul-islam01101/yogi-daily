@@ -21,6 +21,7 @@ const Home = () => {
         }
     }, []);
     // break time data setting to local storage
+    // new commit
     const breakTimeHandler = (time) => {
         setBreakTime(time);
         localStorage.setItem('break-time', time);
